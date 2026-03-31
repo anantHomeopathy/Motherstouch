@@ -46,14 +46,38 @@ const translations = {
         "about_p3": "Online consultations and Hospital/Home Visits are available for your convenience.",
         "about_btn": "Get Consultation",
         
+        "abt_hl_1": "Empathetic Support",
+        "abt_hl_2": "Personalized Care Plans",
+        "abt_hl_3": "Evidence-Based Guidance",
+        "abt_hl_4": "Comfort of Home Visits",
+        
         "services_tag": "Our Services",
         "services_title_1": "How We",
         "services_title_span": "Can Help",
         "services_desc": "Comprehensive lactation support designed for the unique needs of every mother and baby.",
         
+        "svc_1_title": "Personalized Guidance",
+        "svc_1_desc": "One-on-one breastfeeding education and troubleshooting tailored to your baby's needs and your lifestyle.",
+        "svc_2_title": "Latch & Positioning",
+        "svc_2_desc": "Hands-on assistance to achieve a deep, pain-free latch and find the most comfortable nursing positions.",
+        "svc_3_title": "Weaning & Pumping Support",
+        "svc_3_desc": "Expert advice on building a milk stash, choosing the right pump flange, and safely transitioning to solids or weaning.",
+        "svc_4_title": "Hospital & Home Visit",
+        "svc_4_desc": "Convenient, in-person support brought directly to your home or hospital room right after delivery.",
+        "svc_5_title": "Online Consultation",
+        "svc_5_desc": "Accessible virtual support no matter where you are, perfect for quick troubleshooting and follow-ups.",
+        
         "why_tag": "Why Choose Us",
         "why_title_1": "Why",
         "why_title_span": "Mother's Touch?",
+        "why_1_title": "Compassionate Care",
+        "why_1_desc": "A judgment-free, supportive environment where your motherhood goals are respected and nurtured.",
+        "why_2_title": "Personalized Plans",
+        "why_2_desc": "No two babies are the same. We create custom feeding plans that work specifically for your family.",
+        "why_3_title": "Convenience",
+        "why_3_desc": "Offering home visits and online consultations so you can get help without leaving your comfortable space.",
+        "why_4_title": "Expert Knowledge",
+        "why_4_desc": "Professional, up-to-date, and evidence-based solutions to overcome any lactation hurdles.",
         
         "appointment_tag": "Contact Us",
         "appointment_title_1": "Book an",
@@ -145,14 +169,38 @@ const translations = {
         "about_p3": "તમારી સુવિધા માટે ઓનલાઇન કન્સલ્ટેશન અને હોસ્પિટલ/હોમ વિઝિટ ઉપલબ્ધ છે.",
         "about_btn": "પરામર્શ લો",
         
+        "abt_hl_1": "કરુણાપૂર્ણ આધાર",
+        "abt_hl_2": "વ્યક્તિગત સંભાળ",
+        "abt_hl_3": "વૈજ્ઞાનિક માર્ગદર્શન",
+        "abt_hl_4": "ઘરબેઠા સુવિધા",
+        
         "services_tag": "અમારી સેવાઓ",
         "services_title_1": "અમે કેવી રીતે",
         "services_title_span": "મદદ કરી શકીએ",
         "services_desc": "દરેક માતા અને બાળકની અનન્ય જરૂરિયાતો માટે સંપૂર્ણ સ્તનપાન સપોર્ટ.",
         
+        "svc_1_title": "વ્યક્તિગત માર્ગદર્શન",
+        "svc_1_desc": "તમારા બાળકની જરૂરિયાતો અને તમારી જીવનશૈલી અનુસાર સ્તનપાન શિક્ષણ અને સમસ્યાઓનું નિરાકરણ.",
+        "svc_2_title": "લેચ અને પોઝિશનિંગ",
+        "svc_2_desc": "ઊંડા અને દર્દમુક્ત લેચ મેળવવા અને સૌથી આરામદાયક સ્તનપાન પોઝિશન શોધવા માટે વ્યવહારુ સહાય.",
+        "svc_3_title": "વીનિંગ અને પંપિંગ સપોર્ટ",
+        "svc_3_desc": "દૂધનો સંગ્રહ કરવા, યોગ્ય પંપ ફ્લેન્જ પસંદ કરવા અને ઘન આહાર શરૂ કરવા વિશે નિષ્ણાત સલાહ.",
+        "svc_4_title": "હોસ્પિટલ અને હોમ વિઝિટ",
+        "svc_4_desc": "ડિલિવરી પછી તરત જ તમારા ઘરે અથવા હોસ્પિટલ રૂમમાં અનુકૂળ, રૂબરૂ સહાય.",
+        "svc_5_title": "ઓનલાઇન કન્સલ્ટેશન",
+        "svc_5_desc": "તમે ગમે ત્યાં હોવ, ઝડપી સમસ્યાનિવારણ અને ફોલો-અપ માટે સુલભ વર્ચ્યુઅલ સપોર્ટ.",
+        
         "why_tag": "અમને શા માટે પસંદ કરો",
         "why_title_1": "શા માટે",
         "why_title_span": "મધર્સ ટચ?",
+        "why_1_title": "કરુણાપૂર્ણ સંભાળ",
+        "why_1_desc": "એક સહાયક વાતાવરણ જ્યાં તમારા માતૃત્વના લક્ષ્યોનું સન્માન કરવામાં આવે છે.",
+        "why_2_title": "વ્યક્તિગત યોજનાઓ",
+        "why_2_desc": "કોઈ બે બાળકો સમાન નથી હોતા. અમે તમારા પરિવાર માટે ખાસ કસ્ટમ ફીડિંગ પ્લાન બનાવીએ છીએ.",
+        "why_3_title": "અનુકૂળતા",
+        "why_3_desc": "ઘરની મુલાકાતો અને ઓનલાઈન કન્સલ્ટેશન ઓફર કરીએ છીએ જેથી તમને ઘરે બેઠા જ મદદ મળી શકે.",
+        "why_4_title": "નિષ્ણાત જ્ઞાન",
+        "why_4_desc": "સ્તનપાનની કોઈપણ અડચણોને દૂર કરવા માટે વ્યવસાયિક અને પુરાવા આધારિત ઉકેલો.",
         
         "appointment_tag": "અમારો સંપર્ક કરો",
         "appointment_title_1": "એપોઇન્ટમેન્ટ",
@@ -202,4 +250,3 @@ const translations = {
         "wa_thanks": "આભાર!"
     }
 };
-
