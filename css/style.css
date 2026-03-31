@@ -1727,3 +1727,78 @@ ul {
     padding: 24px;
   }
 }
+
+
+/* =========================================
+   MOTHER'S TOUCH - BLUE & WHITE THEME
+   ========================================= */
+
+:root {
+    --primary-color: #00205b; /* Deep Navy Blue from Logo */
+    --secondary-color: #0056b3; /* Bright Blue for buttons/links */
+    --accent-color: #c4f0f4; /* Soft Light Teal/Blue from Logo Background */
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --bg-light: #f4fbfb; /* Very faint blue-white for backgrounds */
+    --bg-white: #ffffff;
+}
+
+/* Base Colors */
+body { background-color: var(--bg-light) !important; color: var(--text-dark) !important; }
+h1, h2, h3, h4, h5, h6 { color: var(--primary-color) !important; }
+
+/* Header & Navigation */
+#header { background-color: var(--bg-white) !important; }
+.logo-name { color: var(--primary-color) !important; }
+.logo-sub { color: var(--secondary-color) !important; }
+.nav-link { color: var(--primary-color) !important; }
+.nav-link:hover, .nav-link.active { color: var(--secondary-color) !important; }
+
+/* Buttons */
+.btn-primary { 
+    background-color: var(--primary-color) !important; 
+    color: var(--text-light) !important; 
+    border: 2px solid var(--primary-color) !important; 
+}
+.btn-primary:hover { 
+    background-color: var(--secondary-color) !important; 
+    border-color: var(--secondary-color) !important; 
+}
+.btn-outline { 
+    color: var(--primary-color) !important; 
+    border: 2px solid var(--primary-color) !important; 
+}
+.btn-outline:hover { 
+    background-color: var(--primary-color) !important; 
+    color: var(--text-light) !important; 
+}
+
+/* Tags and Highlights */
+.section-tag, .hero-tag { 
+    background-color: var(--accent-color) !important; 
+    color: var(--primary-color) !important; 
+}
+.highlight-icon, .service-icon, .why-icon, .contact-icon { 
+    color: var(--secondary-color) !important; 
+}
+h2 span:last-child { 
+    color: var(--secondary-color) !important; 
+}
+
+/* Footer */
+.footer { 
+    background-color: var(--primary-color) !important; 
+    color: var(--text-light) !important; 
+}
+.footer a { color: var(--accent-color) !important; }
+.footer a:hover { color: var(--text-light) !important; }
+
+/* All Cards (Services, Blogs, etc) */
+.specialty-card, .service-card, .why-card, .contact-card, .testimonial-card, .blog-card, .video-card {
+    background-color: var(--bg-white) !important;
+    border: 1px solid #e0f2f5 !important;
+    box-shadow: 0 4px 15px rgba(0, 32, 91, 0.08) !important;
+}
+
+/* Mobile Menu Toggle */
+.mobile-toggle span { background-color: var(--primary-color) !important; }
