@@ -1,7 +1,3 @@
-/* ============================================
-   MOTHER'S TOUCH CLINIC - TRANSLATIONS
-   ============================================ */
-
 const translations = {
     "en": {
         "logo_name": "Mother's",
@@ -250,3 +246,4 @@ const translations = {
         "wa_thanks": "આભાર!"
     }
 };
+       
