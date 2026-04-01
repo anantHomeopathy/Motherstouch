@@ -22,6 +22,8 @@
             <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
             <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
             <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+            <li><a href="#videos" class="nav-link" data-i18n="nav_videos">Videos</a></li>
+            <li><a href="#testimonials" class="nav-link" data-i18n="nav_testimonials">Reviews</a></li>
             <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
           </ul>
         </nav>
@@ -52,13 +54,55 @@
             <a href="#appointment" class="btn btn-primary" data-i18n="hero_btn_appointment">Book Consultation</a>
             <a href="#services" class="btn btn-outline" data-i18n="hero_btn_services">Our Services</a>
           </div>
+          <div class="hero-stats reveal">
+            <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-i18n="stat_patients">Care & Support</span></div>
+            <div class="stat"><span class="stat-num">24/7</span><span class="stat-label" data-i18n="stat_experience">Dedication</span></div>
+            <div class="stat"><span class="stat-num">5+</span><span class="stat-label" data-i18n="stat_specialties">Core Services</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specialties" class="section specialties-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag" data-i18n="specialty_tag">Doctor's Specialty</p>
+          <h2>
+            <span data-i18n="specialty_title_1">Our</span>
+            <span data-i18n="specialty_title_span">Expertise</span>
+          </h2>
+          <p class="section-desc specialty-desc" data-i18n="specialty_desc">
+            Tiny tummies. Endless love. Discover how Dr. Bhoomi Vikani helps mothers and babies thrive.
+          </p>
+        </div>
+        <div class="specialties-grid">
+          <div class="specialty-card reveal">
+            <div class="specialty-icon">🤱</div>
+            <h3 data-i18n="specialty_allergy_title">Breastfeeding Guidance</h3>
+            <p class="specialty-card-desc" data-i18n="specialty_allergy_desc">
+              Personalized support to help you establish a comfortable, successful breastfeeding routine with your baby.
+            </p>
+            <div class="specialty-reel">
+              <iframe src="https://www.instagram.com/reel/PLACEHOLDER/embed" title="Guidance Reel" allowfullscreen loading="lazy" scrolling="no"></iframe>
+            </div>
+          </div>
+          <div class="specialty-card reveal">
+            <div class="specialty-icon">🍼</div>
+            <h3 data-i18n="specialty_migraine_title">Latch & Positioning</h3>
+            <p class="specialty-card-desc" data-i18n="specialty_migraine_desc">
+              Correct positioning techniques to ensure a pain-free experience for mothers and optimal nourishment for babies.
+            </p>
+            <div class="specialty-reel">
+              <iframe src="https://www.instagram.com/reel/PLACEHOLDER/embed" title="Positioning Reel" allowfullscreen loading="lazy" scrolling="no"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section about">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
           <p class="section-tag" data-i18n="about_tag">About</p>
           <h2>
             <span data-i18n="about_title_1">Meet Your</span>
@@ -98,7 +142,7 @@
 
     <section id="services" class="section services">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
           <p class="section-tag" data-i18n="services_tag">Our Services</p>
           <h2>
             <span data-i18n="services_title_1">How We</span>
@@ -142,7 +186,7 @@
 
     <section class="section why-us">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
           <p class="section-tag" data-i18n="why_tag">Why Choose Us</p>
           <h2>
             <span data-i18n="why_title_1">Why</span>
@@ -169,6 +213,62 @@
             <div class="why-icon">👩‍⚕️</div>
             <h4 data-i18n="why_4_title">Expert Knowledge</h4>
             <p data-i18n="why_4_desc">Professional, up-to-date, and evidence-based solutions to overcome any lactation hurdles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section videos-section" style="background-color: var(--light-bg);">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag" data-i18n="videos_tag">Watch & Learn</p>
+          <h2>
+            <span data-i18n="videos_title_1">Health</span>
+            <span data-i18n="videos_title_span">Videos</span>
+          </h2>
+        </div>
+        <div class="videos-grid" id="videosGrid">
+           </div>
+        <div class="videos-empty" id="videosEmpty">
+          <div class="video-card reveal">
+            <div style="padding:40px; text-align:center; background:#fff; border-radius:12px;">
+              <h4 data-i18n="videos_fallback_title">Educational Videos</h4>
+              <p data-i18n="videos_fallback">Videos coming soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag" data-i18n="testimonials_tag">Reviews</p>
+          <h2>
+            <span data-i18n="testimonials_title_1">What Mothers</span>
+            <span data-i18n="testimonials_title_span">Say</span>
+          </h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Dr. Bhoomi was a lifesaver! She helped me fix my baby's latch on day 3 and completely saved our breastfeeding journey."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><img src="assets/images/logo.jpeg" alt="Review" style="object-fit: contain; background: white;" /></div>
+              <div><strong>Happy Mother</strong></div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "The personalized care and home visit made such a huge difference for us. I highly recommend Mother's Touch to every new mom."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><img src="assets/images/logo.jpeg" alt="Review" style="object-fit: contain; background: white;" /></div>
+              <div><strong>Grateful Patient</strong></div>
+            </div>
           </div>
         </div>
       </div>
@@ -216,12 +316,52 @@
                 <input type="text" id="patientEmail" data-i18n-placeholder="form_email_placeholder" placeholder="Baby's Age (e.g. 2 weeks)" />
               </div>
               <div class="form-group">
-                <textarea id="patientMessage" data-i18n-placeholder="form_message_placeholder" placeholder="Briefly describe your concern (e.g., latch issues, low supply)" rows="4"></textarea>
+                <textarea id="patientMessage" data-i18n-placeholder="form_message_placeholder" placeholder="Briefly describe your concern" rows="4"></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-full" data-i18n="form_submit">
                 Send via WhatsApp
               </button>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag" data-i18n="contact_tag">Visit Us</p>
+          <h2><span data-i18n="contact_title">Our Location</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-details reveal">
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4 data-i18n="contact_address_title">Address</h4>
+                <p data-i18n-html="contact_address">Surat, Gujarat, India</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4 data-i18n="contact_phone_title">Phone</h4>
+                <p><a href="tel:+919274284078">📞 +91 92742 84078</a></p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h4 data-i18n="contact_online_title">Online Consultation</h4>
+                <p data-i18n="contact_online_desc">Virtual support is available for mothers living outside Surat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709424726!2d72.73989445164103!3d21.15934029837962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1711902000000!5m2!1sen!2sin"
+              width="100%" height="100%" style="border: 0; border-radius: 12px; min-height: 350px;" allowfullscreen="" loading="lazy" title="Clinic Location">
+            </iframe>
           </div>
         </div>
       </div>
@@ -254,9 +394,10 @@
     <script>
       const translations = {
         "en": {
-            "logo_name": "Mother's", "logo_sub": "Touch", "nav_home": "Home", "nav_about": "About", "nav_services": "Services", "nav_contact": "Contact", "nav_appointment": "Book Appointment",
-            "hero_tag": "Welcome To", "hero_title": "Mother's Touch", "hero_title_span": "Clinic", "hero_desc": "Nurturing Mother, Nourishing Babies. Expert lactation and breastfeeding support for a beautiful motherhood journey.", "hero_btn_appointment": "Book Consultation", "hero_btn_services": "Our Services",
-            "about_tag": "About", "about_title_1": "Meet Your", "about_title_span": "Consultant", "doctor_name": "Dr. Bhoomi Vikani", "doctor_title": "Lactation Consultant",
+            "logo_name": "Mother's", "logo_sub": "Touch", "nav_home": "Home", "nav_about": "About", "nav_services": "Services", "nav_videos": "Videos", "nav_testimonials": "Reviews", "nav_contact": "Contact", "nav_appointment": "Book Appointment",
+            "hero_tag": "Welcome To", "hero_title": "Mother's Touch", "hero_title_span": "Clinic", "hero_desc": "Nurturing Mother, Nourishing Babies. Expert lactation and breastfeeding support for a beautiful motherhood journey.", "hero_btn_appointment": "Book Consultation", "hero_btn_services": "Our Services", "stat_patients": "Care & Support", "stat_experience": "Dedication", "stat_specialties": "Core Services",
+            "specialty_tag": "Doctor's Specialty", "specialty_title_1": "Our", "specialty_title_span": "Expertise", "specialty_desc": "Tiny tummies. Endless love. Discover how Dr. Bhoomi Vikani helps mothers and babies thrive.", "specialty_allergy_title": "Breastfeeding Guidance", "specialty_allergy_desc": "Personalized support to help you establish a comfortable, successful breastfeeding routine with your baby.", "specialty_migraine_title": "Latch & Positioning", "specialty_migraine_desc": "Correct positioning techniques to ensure a pain-free experience for mothers and optimal nourishment for babies.",
+            "about_tag": "About", "about_title_1": "Meet Your", "about_title_span": "Consultant", "doctor_name": "Dr. Bhoomi Vikani", "doctor_title": "Lactation Consultant", "exp_text": "Care",
             "about_p1": "Welcome to Mother's Touch, a dedicated clinic focused on 'Nurturing Mother, Nourishing Babies.' Breastfeeding is a natural process, but it doesn't always come naturally. As a certified lactation consultant, my goal is to empower mothers with the knowledge, confidence, and support they need during this beautiful journey.",
             "about_p2": "Every mother and baby dynamic is unique. Whether you are facing challenges with latching, milk supply, pumping, or transitioning back to work, I provide personalized care plans tailored to your specific needs and goals.",
             "abt_hl_1": "Empathetic Support", "abt_hl_2": "Personalized Care Plans", "abt_hl_3": "Evidence-Based Guidance", "abt_hl_4": "Comfort of Home Visits", "about_btn": "Get Consultation",
@@ -271,16 +412,20 @@
             "why_2_title": "Personalized Plans", "why_2_desc": "No two babies are the same. We create custom feeding plans that work specifically for your family.",
             "why_3_title": "Convenience", "why_3_desc": "Offering home visits and online consultations so you can get help without leaving your comfortable space.",
             "why_4_title": "Expert Knowledge", "why_4_desc": "Professional, up-to-date, and evidence-based solutions to overcome any lactation hurdles.",
+            "videos_tag": "Watch & Learn", "videos_title_1": "Health", "videos_title_span": "Videos", "videos_fallback_title": "Educational Videos", "videos_fallback": "Videos coming soon",
+            "testimonials_tag": "Reviews", "testimonials_title_1": "What Mothers", "testimonials_title_span": "Say",
             "appointment_tag": "Contact Us", "appointment_title_1": "Book an", "appointment_title_span": "Appointment", "appointment_desc": "Schedule a consultation with Dr. Bhoomi Vikani. Call us or fill out the form to get in touch.",
             "quick_call": "Call Us", "quick_whatsapp": "WhatsApp", "form_title": "Request Consultation", "form_name_placeholder": "Mother's Full Name", "form_phone_placeholder": "Mobile Number", "form_email_placeholder": "Baby's Age (e.g. 2 weeks)", "form_message_placeholder": "Briefly describe your concern", "form_submit": "Send via WhatsApp",
+            "contact_tag": "Visit Us", "contact_title": "Our Location", "contact_address_title": "Address", "contact_address": "Surat, Gujarat, India", "contact_phone_title": "Phone", "contact_online_title": "Online Consultation", "contact_online_desc": "Virtual support is available for mothers living outside Surat.",
             "footer_name": "Mother's Touch", "footer_about": "Nurturing Mother, Nourishing Babies. Personalized lactation consulting in Surat.", "footer_quick_links": "Quick Links", "footer_contact_info": "Contact Information", "footer_address": "Surat, Gujarat, India", "footer_copyright": "© 2026 Mother's Touch Clinic. All rights reserved.",
             "form_validation_alert": "Please fill in the required fields.", "wa_greeting": "Hello Dr. Bhoomi,", "wa_appointment": "I would like to book a lactation consultation.", "wa_name": "Mother's Name:", "wa_phone": "Phone:", "wa_email": "Baby's Age:", "wa_problem": "Concern:", "wa_thanks": "Thank you!"
         },
         "gu": {
-            "logo_name": "મધર્સ", "logo_sub": "ટચ", "nav_home": "હોમ", "nav_about": "પરિચય", "nav_services": "સેવાઓ", "nav_contact": "સંપર્ક", "nav_appointment": "એપોઇન્ટમેન્ટ",
-            "hero_tag": "સ્વાગત છે", "hero_title": "મધર્સ ટચ", "hero_title_span": "ક્લિનિક", "hero_desc": "માતાનું પોષણ, શિશુનું જતન. સ્તનપાન અને લેક્ટેશન માટે સુરતમાં નિષ્ણાત માર્ગદર્શન.", "hero_btn_appointment": "પરામર્શ લો", "hero_btn_services": "અમારી સેવાઓ",
-            "about_tag": "પરિચય", "about_title_1": "તમારા નિષ્ણાતને", "about_title_span": "મળો", "doctor_name": "ડૉ. ભૂમિ વિકાની", "doctor_title": "લેક્ટેશન કન્સલ્ટન્ટ",
-            "about_p1": "મધર્સ ટચ ક્લિનિકમાં તમારું સ્વાગત છે. સ્તનપાન એ કુદરતી પ્રક્રિયા છે, પરંતુ તે હંમેશા સરળ હોતી નથી. લેક્ટેશન કન્સલ્ટન્ટ તરીકે મારો ઉદ્દેશ્ય માતાઓને આ સુંદર યાત્રા દરમિયાન જરૂરી જ્ઞાન, આત્મવિશકો, આત્મવિશ્વાસ અને સપોર્ટ આપવાનો છે.",
+            "logo_name": "મધર્સ", "logo_sub": "ટચ", "nav_home": "હોમ", "nav_about": "પરિચય", "nav_services": "સેવાઓ", "nav_videos": "વિડિયો", "nav_testimonials": "પ્રતિભાવ", "nav_contact": "સંપર્ક", "nav_appointment": "એપોઇન્ટમેન્ટ",
+            "hero_tag": "સ્વાગત છે", "hero_title": "મધર્સ ટચ", "hero_title_span": "ક્લિનિક", "hero_desc": "માતાનું પોષણ, શિશુનું જતન. સ્તનપાન અને લેક્ટેશન માટે સુરતમાં નિષ્ણાત માર્ગદર્શન.", "hero_btn_appointment": "પરામર્શ લો", "hero_btn_services": "અમારી સેવાઓ", "stat_patients": "સંભાળ અને આધાર", "stat_experience": "સમર્પણ", "stat_specialties": "મુખ્ય સેવાઓ",
+            "specialty_tag": "ડૉક્ટરની વિશેષતા", "specialty_title_1": "અમારી", "specialty_title_span": "વિશેષતા", "specialty_desc": "નાનકડું પેટ, અનહદ પ્રેમ. જાણો ડૉ. ભૂમિ વિકાની માતા અને બાળકને કેવી રીતે મદદ કરે છે.", "specialty_allergy_title": "સ્તનપાન માર્ગદર્શન", "specialty_allergy_desc": "બાળક સાથે આરામદાયક અને સફળ સ્તનપાન માટે વ્યક્તિગત માર્ગદર્શન.", "specialty_migraine_title": "લેચ અને પોઝિશનિંગ", "specialty_migraine_desc": "માતા માટે દર્દમુક્ત અનુભવ અને બાળકના યોગ્ય પોષણ માટે સાચી પોઝિશનિંગ તકનીકો.",
+            "about_tag": "પરિચય", "about_title_1": "તમારા નિષ્ણાતને", "about_title_span": "મળો", "doctor_name": "ડૉ. ભૂમિ વિકાની", "doctor_title": "લેક્ટેશન કન્સલ્ટન્ટ", "exp_text": "સંભાળ",
+            "about_p1": "મધર્સ ટચ ક્લિનિકમાં તમારું સ્વાગત છે. સ્તનપાન એ કુદરતી પ્રક્રિયા છે, પરંતુ તે હંમેશા સરળ હોતી નથી. લેક્ટેશન કન્સલ્ટન્ટ તરીકે મારો ઉદ્દેશ્ય માતાઓને આ સુંદર યાત્રા દરમિયાન જરૂરી જ્ઞાન, આત્મવિશ્વાસ અને સપોર્ટ આપવાનો છે.",
             "about_p2": "દરેક માતા અને બાળકની જરૂરિયાત અલગ હોય છે. તમને લેચિંગ, દૂધની ઓછી આવક, પમ્પિંગ અથવા કામ પર પાછા ફરતી વખતે કોઈ મુશ્કેલી પડતી હોય, તો અમે યોગ્ય ઉકેલ આપીએ છીએ.",
             "abt_hl_1": "કરુણાપૂર્ણ આધાર", "abt_hl_2": "વ્યક્તિગત સંભાળ", "abt_hl_3": "વૈજ્ઞાનિક માર્ગદર્શન", "abt_hl_4": "ઘરબેઠા સુવિધા", "about_btn": "પરામર્શ લો",
             "services_tag": "અમારી સેવાઓ", "services_title_1": "અમે કેવી રીતે", "services_title_span": "મદદ કરી શકીએ", "services_desc": "દરેક માતા અને બાળકની અનન્ય જરૂરિયાતો માટે સંપૂર્ણ સ્તનપાન સપોર્ટ.",
@@ -294,8 +439,11 @@
             "why_2_title": "વ્યક્તિગત યોજનાઓ", "why_2_desc": "કોઈ બે બાળકો સમાન નથી હોતા. અમે તમારા પરિવાર માટે ખાસ કસ્ટમ ફીડિંગ પ્લાન બનાવીએ છીએ.",
             "why_3_title": "અનુકૂળતા", "why_3_desc": "ઘરની મુલાકાતો અને ઓનલાઈન કન્સલ્ટેશન ઓફર કરીએ છીએ જેથી તમને ઘરે બેઠા જ મદદ મળી શકે.",
             "why_4_title": "નિષ્ણાત જ્ઞાન", "why_4_desc": "સ્તનપાનની કોઈપણ અડચણોને દૂર કરવા માટે વ્યવસાયિક અને પુરાવા આધારિત ઉકેલો.",
+            "videos_tag": "માહિતીપ્રદ વિડિયો", "videos_title_1": "આરોગ્ય", "videos_title_span": "વિડિયો", "videos_fallback_title": "માહિતીપ્રદ વિડિયો", "videos_fallback": "વિડિયો ટૂંક સમયમાં આવશે",
+            "testimonials_tag": "પ્રતિભાવ", "testimonials_title_1": "માતાઓ શું", "testimonials_title_span": "કહે છે",
             "appointment_tag": "અમારો સંપર્ક કરો", "appointment_title_1": "એપોઇન્ટમેન્ટ", "appointment_title_span": "બુક કરો", "appointment_desc": "ડૉ. ભૂમિ વિકાની સાથે પરામર્શ માટે સમય લો. ફોન કરો અથવા ફોર્મ ભરો.",
             "quick_call": "ફોન કરો", "quick_whatsapp": "વૉટ્સએપ", "form_title": "પરામર્શ માટે વિનંતી", "form_name_placeholder": "માતાનું પૂરું નામ", "form_phone_placeholder": "મોબાઈલ નંબર", "form_email_placeholder": "બાળકની ઉંમર (દા.ત. 2 અઠવાડિયા)", "form_message_placeholder": "તમારી તકલીફ વિશે ટૂંકમાં જણાવો", "form_submit": "WhatsApp દ્વારા મોકલો",
+            "contact_tag": "મુલાકાત લો", "contact_title": "અમારું સરનામું", "contact_address_title": "સરનામું", "contact_address": "સુરત, ગુજરાત, ભારત", "contact_phone_title": "ફોન", "contact_online_title": "ઓનલાઇન કન્સલ્ટેશન", "contact_online_desc": "સુરતની બહારની માતાઓ માટે ઓનલાઇન સુવિધા ઉપલબ્ધ છે.",
             "footer_name": "મધર્સ ટચ", "footer_about": "માતાનું પોષણ, શિશુનું જતન. સુરતમાં નિષ્ણાત લેક્ટેશન માર્ગદર્શન.", "footer_quick_links": "ઝડપી લિંક્સ", "footer_contact_info": "સંપર્ક માહિતી", "footer_address": "સુરત, ગુજરાત, ભારત", "footer_copyright": "© 2026 મધર્સ ટચ ક્લિનિક. સર્વાધિકાર સુરક્ષિત.",
             "form_validation_alert": "કૃપા કરીને જરૂરી માહિતી ભરો.", "wa_greeting": "નમસ્તે ડૉ. ભૂમિ,", "wa_appointment": "મારે લેક્ટેશન કન્સલ્ટેશન માટે એપોઇન્ટમેન્ટ બુક કરવી છે.", "wa_name": "માતાનું નામ:", "wa_phone": "ફોન:", "wa_email": "બાળકની ઉંમર:", "wa_problem": "તકલીફ:", "wa_thanks": "આભાર!"
         }
@@ -374,7 +522,8 @@
               });
           }
 
-          const revealElements = document.querySelectorAll('.hero-image, .about-image, .service-card, .why-card, .appointment-info, .appointment-form-wrapper');
+          // Triggering the scroll animations
+          const revealElements = document.querySelectorAll('.hero-stats, .about-image, .service-card, .why-card, .appointment-info, .appointment-form-wrapper, .specialty-card, .video-card, .testimonial-card, .contact-details, .contact-map, .section-header');
           revealElements.forEach(el => el.classList.add('reveal'));
           const observer = new IntersectionObserver((entries) => {
               entries.forEach(entry => {
