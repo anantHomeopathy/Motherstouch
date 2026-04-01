@@ -1,255 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mother's Touch | Lactation Consultant</title>
-  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg" />
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Touch | Premium Lactation Consulting</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <div class="container nav-container">
-      <a href="#" class="logo">
-        <img src="assets/images/logo.jpeg" alt="Mother's Touch Logo" onerror="this.src='logo.jpeg'">
-      </a>
-      <button class="menu-btn" id="menuBtn">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" data-i18n="nav_home">Home</a></li>
-        <li><a href="#services" data-i18n="nav_services">Services</a></li>
-        <li><a href="#about" data-i18n="nav_about">About Me</a></li>
-        <li>
-          <div class="lang-switch">
-            <button class="lang-btn active" data-lang="en">EN</button>
-            <button class="lang-btn" data-lang="gu">ગુજ</button>
-          </div>
-        </li>
-        <li><a href="#book" class="btn" data-i18n="nav_book">Book Appointment</a></li>
-      </ul>
+    <header class="glass-header">
+        <div class="container nav-wrapper">
+            <a href="#home" class="logo-brand">
+                <img src="assets/images/logo.jpeg" alt="Mother's Touch" onerror="this.style.display='none'">
+                <div class="brand-text">
+                    <span class="brand-title" data-i18n="logo_name">Mother's Touch</span>
+                    <span class="brand-subtitle">Lactation & Breastfeeding Clinic</span>
+                </div>
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#expertise" data-i18n="nav_services">Expertise</a></li>
+                    <li><a href="#consultant" data-i18n="nav_about">The Consultant</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="lang-toggle">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="gu">ગુજ</button>
+                    </div>
+                    <a href="#booking" class="btn-premium" data-i18n="nav_book">Book Consultation</a>
+                </div>
+            </nav>
+
+            <button class="hamburger" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileMenu">
+        <div class="mobile-nav-content">
+            <a href="#home" class="mobile-link" data-i18n="nav_home">Home</a>
+            <a href="#expertise" class="mobile-link" data-i18n="nav_services">Expertise</a>
+            <a href="#consultant" class="mobile-link" data-i18n="nav_about">About</a>
+            <a href="#booking" class="mobile-link" data-i18n="nav_book">Book Appointment</a>
+            <div class="lang-toggle mobile-lang">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="gu">ગુજરાતી</button>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <h1 data-i18n="hero_title">Expert Lactation Support</h1>
-        <p data-i18n="hero_desc">Nurturing Mother, Nourishing Babies. Personalized solutions to help you navigate the beautiful challenges of breastfeeding.</p>
-        <a href="#book" class="btn" data-i18n="hero_btn">Schedule a Consultation</a>
-      </div>
-      <div class="hero-image">
-        <img src="assets/images/doctor.jpg" alt="Dr. Bhoomi Vikani" onerror="this.src='doctor.jpg'">
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="container">
-      <h2 class="section-title" data-i18n="services_title">Breastfeeding Solutions</h2>
-      <p class="section-subtitle" data-i18n="services_sub">Expert guidance tailored to resolve the most common challenges faced by mothers.</p>
-      
-      <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon">👶</div>
-          <h3 data-i18n="svc_1_title">Latching & Positioning</h3>
-          <p data-i18n="svc_1_desc">Hands-on assistance to achieve a deep, pain-free latch and discover comfortable nursing postures.</p>
+    <section id="home" class="hero-premium">
+        <div class="hero-bg-pattern"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge" data-i18n="hero_badge">Certified Expert Care</div>
+                <h1 class="hero-title">
+                    <span data-i18n="hero_title_1">Empowering Motherhood</span><br>
+                    <span class="text-gold" data-i18n="hero_title_2">Through Expert Support.</span>
+                </h1>
+                <p class="hero-description" data-i18n="hero_desc">
+                    Comprehensive, evidence-based lactation consulting tailored to the unique bond between you and your baby. Overcome challenges and thrive.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#booking" class="btn-premium btn-large" data-i18n="hero_btn_1">Schedule Your Visit</a>
+                    <a href="tel:+919274284078" class="btn-text">📞 +91 92742 84078</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="image-frame">
+                    <img src="assets/images/doctor.jpg" alt="Dr. Bhoomi Vikani" class="main-img" onerror="this.src='doctor.jpg'">
+                    <div class="floating-stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-text">Personalized<br>Care Plans</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <div class="card-icon">🍼</div>
-          <h3 data-i18n="svc_2_title">Increase Milk Supply</h3>
-          <p data-i18n="svc_2_desc">Evidence-based techniques and plans to naturally increase and maintain healthy breast milk production.</p>
+    </section>
+
+    <section id="expertise" class="expertise-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2 class="section-title" data-i18n="services_title">Clinical Expertise</h2>
+                <div class="heading-divider"></div>
+                <p class="section-subtitle" data-i18n="services_sub">Advanced solutions for complex breastfeeding challenges.</p>
+            </div>
+
+            <div class="expertise-grid">
+                <div class="expert-card">
+                    <div class="card-icon-gold">🤱</div>
+                    <h3 data-i18n="svc_1_title">Latch & Positioning</h3>
+                    <p data-i18n="svc_1_desc">Clinical assessment and correction of latch mechanics to ensure pain-free nursing and optimal milk transfer.</p>
+                </div>
+                <div class="expert-card">
+                    <div class="card-icon-gold">📈</div>
+                    <h3 data-i18n="svc_2_title">Supply Management</h3>
+                    <p data-i18n="svc_2_desc">Evidence-based protocols to diagnose and treat low milk supply or manage hyperlactation safely.</p>
+                </div>
+                <div class="expert-card">
+                    <div class="card-icon-gold">🩺</div>
+                    <h3 data-i18n="svc_3_title">Pain Resolution</h3>
+                    <p data-i18n="svc_3_desc">Immediate therapeutic strategies for engorgement, mastitis, clogged ducts, and tissue trauma.</p>
+                </div>
+                <div class="expert-card">
+                    <div class="card-icon-gold">💼</div>
+                    <h3 data-i18n="svc_4_title">Return to Work</h3>
+                    <p data-i18n="svc_4_desc">Strategic pumping schedules, flange sizing, and milk storage guidelines for working mothers.</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <div class="card-icon">🤱</div>
-          <h3 data-i18n="svc_3_title">Painful Breastfeeding</h3>
-          <p data-i18n="svc_3_desc">Immediate relief strategies for engorgement, clogged ducts, and sore nipples for a smooth experience.</p>
+    </section>
+
+    <section id="consultant" class="profile-section">
+        <div class="container profile-grid">
+            <div class="profile-image-col">
+                <img src="assets/images/doctor.jpg" alt="Dr. Bhoomi Vikani" onerror="this.style.display='none'">
+            </div>
+            <div class="profile-content-col">
+                <h4 class="gold-subtitle">THE CONSULTANT</h4>
+                <h2 class="section-title">Dr. Bhoomi Vikani</h2>
+                <p class="credentials">Certified Lactation Consultant</p>
+                
+                <div class="profile-text">
+                    <p data-i18n="about_desc1">Breastfeeding is a highly instinctual process, yet it frequently requires skilled intervention. As a clinical specialist, my objective is to bridge the gap between natural instincts and medical realities.</p>
+                    <p data-i18n="about_desc2">I provide non-judgmental, scientifically backed interventions designed around your personal anatomy, your baby's oral mechanics, and your family's lifestyle goals.</p>
+                </div>
+
+                <ul class="premium-list">
+                    <li>Evidence-Based Clinical Practice</li>
+                    <li>Holistic Maternal Support</li>
+                    <li>Customized Feeding Plans</li>
+                </ul>
+            </div>
         </div>
-        <div class="card">
-          <div class="card-icon">💼</div>
-          <h3 data-i18n="svc_4_title">Weaning & Pumping</h3>
-          <p data-i18n="svc_4_desc">Professional advice on building a milk stash, choosing breast pumps, and transitioning back to work safely.</p>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2 class="section-title text-white">Request a Consultation</h2>
+                    <p class="text-white opacity-80" style="margin-bottom: 30px;">Select a consultation mode that fits your lifestyle. Priority support available.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="method">
+                            <span class="icon">📍</span>
+                            <div>
+                                <strong>Clinic Visit</strong>
+                                <span>Surat, Gujarat</span>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <span class="icon">💻</span>
+                            <div>
+                                <strong>Telehealth</strong>
+                                <span>Global Video Consults</span>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <span class="icon">🏠</span>
+                            <div>
+                                <strong>Home Visit</strong>
+                                <span>Available in select areas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form-card">
+                    <h3>Secure Your Appointment</h3>
+                    <form id="appointmentForm" class="premium-form">
+                        <div class="input-group">
+                            <label>Mother's Name</label>
+                            <input type="text" id="patientName" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Contact Number</label>
+                            <input type="tel" id="patientPhone" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Primary Concern</label>
+                            <select id="patientIssue">
+                                <option value="Painful Latch">Painful Latch</option>
+                                <option value="Low Supply">Low Supply</option>
+                                <option value="Pumping/Weaning">Pumping & Weaning</option>
+                                <option value="Other">Other Issues</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-premium btn-full">Connect via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="book" class="section packages">
-    <div class="container">
-      <h2 class="section-title" data-i18n="packages_title">Book Your Consultation</h2>
-      <p class="section-subtitle" data-i18n="packages_sub">Choose the support plan that best fits your specific needs and location.</p>
-      
-      <div class="cards-grid">
-        <div class="booking-card">
-          <h3 data-i18n="pkg_1_title">Clinic Consultation</h3>
-          <p class="booking-price">₹1,500</p>
-          <ul class="booking-features">
-            <li data-i18n="pkg_1_f1">Face-to-face personalized support</li>
-            <li data-i18n="pkg_1_f2">Physical latching & posture assessment</li>
-            <li data-i18n="pkg_1_f3">Includes 1 Free Follow-up call</li>
-          </ul>
-          <a href="#" class="btn btn-full wa-link" data-i18n="nav_book">Book Now</a>
+    <footer class="premium-footer">
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <h3 class="text-gold">Mother's Touch</h3>
+                <p>Setting the standard for clinical lactation support and maternal empowerment in Surat.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#consultant">Consultant Profile</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>+91 92742 84078</p>
+                <p>Surat, Gujarat, India</p>
+            </div>
         </div>
-        
-        <div class="booking-card">
-          <h3 data-i18n="pkg_2_title">Video Consultation</h3>
-          <p class="booking-price">₹1,000</p>
-          <ul class="booking-features">
-            <li data-i18n="pkg_2_f1">Support from the comfort of home</li>
-            <li data-i18n="pkg_2_f2">Virtual positioning guidance</li>
-            <li data-i18n="pkg_2_f3">1 week of WhatsApp support</li>
-          </ul>
-          <a href="#" class="btn btn-full wa-link" data-i18n="nav_book">Book Now</a>
+        <div class="footer-legal text-center">
+            <p>&copy; 2026 Mother's Touch Clinic. All Rights Reserved.</p>
         </div>
+    </footer>
 
-        <div class="booking-card">
-          <h3 data-i18n="pkg_3_title">Phone Consultation</h3>
-          <p class="booking-price">₹500</p>
-          <ul class="booking-features">
-            <li data-i18n="pkg_3_f1">Quick resolution of basic queries</li>
-            <li data-i18n="pkg_3_f2">Diet & routine planning advice</li>
-            <li data-i18n="pkg_3_f3">Immediate problem solving</li>
-          </ul>
-          <a href="#" class="btn btn-full wa-link" data-i18n="nav_book">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <script>
+        const translations = {
+            "en": {
+                "logo_name": "Mother's Touch", "nav_home": "Home", "nav_services": "Expertise", "nav_about": "About", "nav_book": "Book Consultation",
+                "hero_badge": "Certified Expert Care", "hero_title_1": "Empowering Motherhood", "hero_title_2": "Through Expert Support.", "hero_desc": "Comprehensive, evidence-based lactation consulting tailored to the unique bond between you and your baby.", "hero_btn_1": "Schedule Your Visit",
+                "services_title": "Clinical Expertise", "services_sub": "Advanced solutions for complex breastfeeding challenges.",
+                "svc_1_title": "Latch & Positioning", "svc_1_desc": "Clinical assessment and correction of latch mechanics to ensure pain-free nursing and optimal milk transfer.",
+                "svc_2_title": "Supply Management", "svc_2_desc": "Evidence-based protocols to diagnose and treat low milk supply or manage hyperlactation safely.",
+                "svc_3_title": "Pain Resolution", "svc_3_desc": "Immediate therapeutic strategies for engorgement, mastitis, clogged ducts, and tissue trauma.",
+                "svc_4_title": "Return to Work", "svc_4_desc": "Strategic pumping schedules, flange sizing, and milk storage guidelines for working mothers.",
+                "about_desc1": "Breastfeeding is a highly instinctual process, yet it frequently requires skilled intervention. As a clinical specialist, my objective is to bridge the gap between natural instincts and medical realities.",
+                "about_desc2": "I provide non-judgmental, scientifically backed interventions designed around your personal anatomy, your baby's oral mechanics, and your family's lifestyle goals."
+            },
+            "gu": {
+                "logo_name": "મધર્સ ટચ", "nav_home": "હોમ", "nav_services": "વિશેષતા", "nav_about": "પરિચય", "nav_book": "એપોઇન્ટમેન્ટ",
+                "hero_badge": "પ્રમાણિત નિષ્ણાત સંભાળ", "hero_title_1": "માતૃત્વનું સશક્તિકરણ", "hero_title_2": "નિષ્ણાત સપોર્ટ દ્વારા.", "hero_desc": "તમારા અને તમારા બાળક વચ્ચેના અનન્ય બોન્ડને અનુરૂપ પુરાવા આધારિત સ્તનપાન કન્સલ્ટિંગ.", "hero_btn_1": "પરામર્શ બુક કરો",
+                "services_title": "તબીબી વિશેષતા", "services_sub": "જટિલ સ્તનપાન પડકારો માટે અદ્યતન ઉકેલો.",
+                "svc_1_title": "લેચ અને પોઝિશનિંગ", "svc_1_desc": "દર્દમુક્ત સ્તનપાન અને યોગ્ય દૂધ ટ્રાન્સફરની ખાતરી કરવા માટે લેચ મિકેનિક્સનું નિદાન અને સુધારો.",
+                "svc_2_title": "દૂધ પુરવઠા વ્યવસ્થાપન", "svc_2_desc": "દૂધના ઓછા પુરવઠાની સારવાર અથવા હાઈપરલેક્ટેશનનું સુરક્ષિત રીતે સંચાલન કરવા માટેના પ્રોટોકોલ.",
+                "svc_3_title": "પીડા નિવારણ", "svc_3_desc": "સ્તનનો ભરાવો, મેસ્ટાઈટિસ, અને પેશીઓને નુકસાન માટે તાત્કાલિક રોગનિવારક વ્યૂહરચના.",
+                "svc_4_title": "કામ પર પાછા ફરવું", "svc_4_desc": "કામ કરતી માતાઓ માટે વ્યૂહાત્મક પમ્પિંગ સમયપત્રક, ફ્લેંજ કદ બદલવા અને દૂધ સંગ્રહ માર્ગદર્શિકા.",
+                "about_desc1": "સ્તનપાન એ એક સ્વાભાવિક પ્રક્રિયા છે, છતાં તેમાં વારંવાર કુશળ હસ્તક્ષેપની જરૂર પડે છે. નિષ્ણાત તરીકે, મારો ઉદ્દેશ્ય કુદરતી વૃત્તિ અને તબીબી વાસ્તવિકતાઓ વચ્ચેના અંતરને દૂર કરવાનો છે.",
+                "about_desc2": "હું તમારી વ્યક્તિગત શરીરરચના, તમારા બાળકની મૌખિક મિકેનિક્સ અને તમારા પરિવારની જીવનશૈલીની આસપાસ રચાયેલ વૈજ્ઞાનિક માર્ગદર્શન પ્રદાન કરું છું."
+            }
+        };
 
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-image">
-        <img src="assets/images/doctor.jpg" alt="Dr. Bhoomi Vikani" onerror="this.src='doctor.jpg'">
-      </div>
-      <div class="about-text">
-        <h2 data-i18n="about_title">Meet Dr. Bhoomi Vikani</h2>
-        <h4 style="color: var(--accent); margin-bottom: 20px;">Lactation Consultant</h4>
-        <p data-i18n="about_desc1">Welcome to Mother's Touch. Breastfeeding is a natural process, but it doesn't always come naturally. As a certified lactation consultant, my goal is to empower mothers with the knowledge, confidence, and support they need during this beautiful journey.</p>
-        <p data-i18n="about_desc2">Every mother and baby dynamic is unique. I take the time to listen to your needs, assess your breastfeeding journey, and develop a customized care plan to help you overcome any challenges you may be facing.</p>
-      </div>
-    </div>
-  </section>
+        let currentLang = localStorage.getItem('lang') || 'en';
 
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <div class="footer-logo">
-          <img src="assets/images/logo.jpeg" alt="Mother's Touch Logo" onerror="this.src='logo.jpeg'">
-        </div>
-        <p data-i18n="footer_desc">Expert lactation support helping mothers and babies thrive in Surat, Gujarat.</p>
-      </div>
-      <div>
-        <h4 data-i18n="nav_services">Services</h4>
-        <ul>
-          <li><a href="#services" data-i18n="svc_1_title">Latching & Positioning</a></li>
-          <li><a href="#services" data-i18n="svc_2_title">Increase Milk Supply</a></li>
-          <li><a href="#services" data-i18n="svc_4_title">Weaning & Pumping</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="packages_title">Consultations</h4>
-        <ul>
-          <li><a href="#book" data-i18n="pkg_1_title">Clinic Consultation</a></li>
-          <li><a href="#book" data-i18n="pkg_2_title">Video Consultation</a></li>
-          <li><a href="#book" data-i18n="pkg_3_title">Phone Consultation</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+919274284078">📞 +91 92742 84078</a></li>
-          <li>📍 Surat, Gujarat</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 Mother's Touch Clinic. All Rights Reserved.</p>
-    </div>
-  </footer>
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('lang', lang);
+            const t = translations[lang] || {};
 
-  <a href="#" class="whatsapp-float wa-link">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                if (t[el.getAttribute('data-i18n')]) el.innerHTML = t[el.getAttribute('data-i18n')];
+            });
 
-  <script>
-    const translations = {
-      "en": {
-        "nav_home": "Home", "nav_services": "Services", "nav_about": "About Me", "nav_book": "Book Appointment",
-        "hero_title": "Expert Lactation Support", "hero_desc": "Nurturing Mother, Nourishing Babies. Personalized solutions to help you navigate the beautiful challenges of breastfeeding.", "hero_btn": "Schedule a Consultation",
-        "services_title": "Breastfeeding Solutions", "services_sub": "Expert guidance tailored to resolve the most common challenges faced by mothers.",
-        "svc_1_title": "Latching & Positioning", "svc_1_desc": "Hands-on assistance to achieve a deep, pain-free latch and discover comfortable nursing postures.",
-        "svc_2_title": "Increase Milk Supply", "svc_2_desc": "Evidence-based techniques and plans to naturally increase and maintain healthy breast milk production.",
-        "svc_3_title": "Painful Breastfeeding", "svc_3_desc": "Immediate relief strategies for engorgement, clogged ducts, and sore nipples for a smooth experience.",
-        "svc_4_title": "Weaning & Pumping", "svc_4_desc": "Professional advice on building a milk stash, choosing breast pumps, and transitioning back to work safely.",
-        "packages_title": "Book Your Consultation", "packages_sub": "Choose the support plan that best fits your specific needs and location.",
-        "pkg_1_title": "Clinic Consultation", "pkg_1_f1": "Face-to-face personalized support", "pkg_1_f2": "Physical latching & posture assessment", "pkg_1_f3": "Includes 1 Free Follow-up call",
-        "pkg_2_title": "Video Consultation", "pkg_2_f1": "Support from the comfort of home", "pkg_2_f2": "Virtual positioning guidance", "pkg_2_f3": "1 week of WhatsApp support",
-        "pkg_3_title": "Phone Consultation", "pkg_3_f1": "Quick resolution of basic queries", "pkg_3_f2": "Diet & routine planning advice", "pkg_3_f3": "Immediate problem solving",
-        "about_title": "Meet Dr. Bhoomi Vikani", "about_desc1": "Welcome to Mother's Touch. Breastfeeding is a natural process, but it doesn't always come naturally. As a certified lactation consultant, my goal is to empower mothers with the knowledge, confidence, and support they need during this beautiful journey.", "about_desc2": "Every mother and baby dynamic is unique. I take the time to listen to your needs, assess your breastfeeding journey, and develop a customized care plan to help you overcome any challenges you may be facing.",
-        "footer_desc": "Expert lactation support helping mothers and babies thrive in Surat, Gujarat.",
-        "wa_text": "Hello Dr. Bhoomi, I would like to book a consultation."
-      },
-      "gu": {
-        "nav_home": "હોમ", "nav_services": "સેવાઓ", "nav_about": "મારા વિશે", "nav_book": "એપોઇન્ટમેન્ટ બુક કરો",
-        "hero_title": "નિષ્ણાત લેક્ટેશન સપોર્ટ", "hero_desc": "માતાનું પોષણ, શિશુનું જતન. સ્તનપાનના પડકારોને દૂર કરવા માટે વ્યક્તિગત ઉકેલો.", "hero_btn": "પરામર્શ બુક કરો",
-        "services_title": "સ્તનપાન ઉકેલો", "services_sub": "માતાઓ દ્વારા સામનો કરવામાં આવતી સામાન્ય સમસ્યાઓના ઉકેલ માટે નિષ્ણાત માર્ગદર્શન.",
-        "svc_1_title": "લેચ અને પોઝિશનિંગ", "svc_1_desc": "દર્દમુક્ત લેચ મેળવવા અને આરામદાયક સ્તનપાન પોઝિશન શોધવા માટે વ્યવહારુ સહાય.",
-        "svc_2_title": "દૂધનો પુરવઠો વધારવો", "svc_2_desc": "સ્તનપાન ઉત્પાદનને કુદરતી રીતે વધારવા અને જાળવી રાખવા માટે પુરાવા આધારિત તકનીકો.",
-        "svc_3_title": "પીડાદાયક સ્તનપાન", "svc_3_desc": "દૂધના ગઠ્ઠા, ભરાવો અને પીડાદાયક સ્તનની ડીંટડી માટે ત્વરિત રાહતની વ્યૂહરચના.",
-        "svc_4_title": "વીનિંગ અને પંપિંગ", "svc_4_desc": "દૂધનો સંગ્રહ કરવા, બ્રેસ્ટ પંપ પસંદ કરવા અને કામ પર સુરક્ષિત રીતે પાછા ફરવા અંગે સલાહ.",
-        "packages_title": "તમારી એપોઇન્ટમેન્ટ બુક કરો", "packages_sub": "તમારી જરૂરિયાતો અને સ્થાનને શ્રેષ્ઠ રીતે અનુરૂપ સપોર્ટ પ્લાન પસંદ કરો.",
-        "pkg_1_title": "ક્લિનિક કન્સલ્ટેશન", "pkg_1_f1": "રૂબરૂ વ્યક્તિગત સપોર્ટ", "pkg_1_f2": "શારીરિક લેચિંગ અને મુદ્રાની તપાસ", "pkg_1_f3": "1 ફ્રી ફોલો-અપ કૉલ શામેલ છે",
-        "pkg_2_title": "વિડિઓ કન્સલ્ટેશન", "pkg_2_f1": "ઘરની આરામથી સપોર્ટ મેળવો", "pkg_2_f2": "વર્ચ્યુઅલ પોઝિશનિંગ માર્ગદર્શન", "pkg_2_f3": "1 અઠવાડિયાનો WhatsApp સપોર્ટ",
-        "pkg_3_title": "ફોન કન્સલ્ટેશન", "pkg_3_f1": "પ્રાથમિક પ્રશ્નોનું ઝડપી નિરાકરણ", "pkg_3_f2": "આહાર અને દિનચર્યાની સલાહ", "pkg_3_f3": "તાત્કાલિક સમસ્યાનું નિરાકરણ",
-        "about_title": "ડૉ. ભૂમિ વિકાનીને મળો", "about_desc1": "મધર્સ ટચમાં આપનું સ્વાગત છે. લેક્ટેશન કન્સલ્ટન્ટ તરીકે મારો ઉદ્દેશ્ય માતાઓને આ સુંદર યાત્રા દરમિયાન જરૂરી જ્ઞાન, આત્મવિશ્વાસ અને સપોર્ટ આપવાનો છે.", "about_desc2": "દરેક માતા અને બાળકની જરૂરિયાત અલગ હોય છે. અમે તમારી સમસ્યાઓ સાંભળીને તેને દૂર કરવા માટે કસ્ટમાઇઝ્ડ કેર પ્લાન વિકસાવીએ છીએ.",
-        "footer_desc": "સુરત, ગુજરાતમાં માતાઓ અને બાળકોના જતન માટે નિષ્ણાત લેક્ટેશન સપોર્ટ.",
-        "wa_text": "નમસ્તે ડૉ. ભૂમિ, મારે કન્સલ્ટેશન બુક કરવું છે."
-      }
-    };
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+            });
+        }
 
-    let currentLang = localStorage.getItem('lang') || 'en';
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage(currentLang);
 
-    function setLanguage(lang) {
-      currentLang = lang;
-      localStorage.setItem('lang', lang);
-      document.documentElement.lang = lang;
-      const t = translations[lang] || {};
+            // Header Scroll Effect
+            const header = document.querySelector('.glass-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            });
 
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        if (t[el.getAttribute('data-i18n')]) el.textContent = t[el.getAttribute('data-i18n')];
-      });
+            // Mobile Menu
+            const mobileToggle = document.getElementById('mobileToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
 
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
+            mobileToggle.addEventListener('click', () => {
+                mobileToggle.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
 
-      // Update WhatsApp links based on language
-      const waText = encodeURIComponent(t.wa_text || "Hello Dr. Bhoomi");
-      document.querySelectorAll('.wa-link').forEach(link => {
-        link.href = `https://wa.me/919274284078?text=${waText}`;
-      });
-    }
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileToggle.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      setLanguage(currentLang);
+            // Language Buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => setLanguage(e.target.getAttribute('data-lang')));
+            });
 
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => setLanguage(e.target.getAttribute('data-lang')));
-      });
-
-      // Mobile Menu Logic
-      const menuBtn = document.getElementById('menuBtn');
-      const navLinks = document.getElementById('navLinks');
-      
-      menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-      });
-
-      navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => navLinks.classList.remove('active'));
-      });
-    });
-  </script>
+            // WhatsApp Form Logic
+            document.getElementById('appointmentForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('patientName').value;
+                const phone = document.getElementById('patientPhone').value;
+                const issue = document.getElementById('patientIssue').value;
+                
+                const text = `Hello Dr. Bhoomi,\nI would like to book a consultation.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Concern:* ${issue}`;
+                window.open(`https://wa.me/919274284078?text=${encodeURIComponent(text)}`, '_blank');
+            });
+        });
+    </script>
 </body>
 </html>
