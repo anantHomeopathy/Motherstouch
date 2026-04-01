@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Mother's Touch Clinic - Dr. Bhoomi Vikani, Lactation Consultant in Surat." />
     <title>Mother's Touch | Dr. Bhoomi Vikani | Lactation Consultant</title>
-    <link rel="icon" type="image/jpeg" href="logo.jpeg" />
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +15,7 @@
     <header id="header">
       <div class="container nav-container">
         <a href="#home" class="logo">
-          <img src="logo.jpeg" alt="Mother's Touch Logo" onerror="this.style.display='none'" />
+          <img src="assets/images/logo.jpeg" alt="Mother's Touch Logo" />
           <div class="logo-text">
             <span class="logo-name" data-i18n="logo_name">Mother's</span>
             <span class="logo-sub" data-i18n="logo_sub">Touch</span>
@@ -57,6 +57,11 @@
             <a href="#services" class="btn btn-outline" data-i18n="hero_btn_services">Our Services</a>
           </div>
         </div>
+        <div class="hero-image reveal">
+          <div class="hero-img-wrapper doctor-hero">
+            <img src="assets/images/doctor.jpeg" alt="Dr. Bhoomi Vikani" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -70,7 +75,16 @@
           </h2>
         </div>
         <div class="about-grid">
-          <div class="about-content">
+          <div class="about-image reveal">
+            <div class="about-img-frame">
+              <img src="assets/images/doctor.jpeg" alt="Dr. Bhoomi Vikani" />
+              <div class="experience-badge">
+                <span class="exp-num">Expert</span>
+                <span class="exp-text" data-i18n="exp_text">Care</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content reveal">
             <h3 data-i18n="doctor_name">Dr. Bhoomi Vikani</h3>
             <p class="doctor-title" data-i18n="doctor_title">Lactation Consultant</p>
             <p data-i18n="about_p1">
@@ -275,7 +289,7 @@
             "logo_name": "મધર્સ", "logo_sub": "ટચ", "nav_home": "હોમ", "nav_about": "પરિચય", "nav_services": "સેવાઓ", "nav_contact": "સંપર્ક", "nav_appointment": "એપોઇન્ટમેન્ટ",
             "hero_tag": "સ્વાગત છે", "hero_title": "મધર્સ ટચ", "hero_title_span": "ક્લિનિક", "hero_desc": "માતાનું પોષણ, શિશુનું જતન. સ્તનપાન અને લેક્ટેશન માટે સુરતમાં નિષ્ણાત માર્ગદર્શન.", "hero_btn_appointment": "પરામર્શ લો", "hero_btn_services": "અમારી સેવાઓ",
             "about_tag": "પરિચય", "about_title_1": "તમારા નિષ્ણાતને", "about_title_span": "મળો", "doctor_name": "ડૉ. ભૂમિ વિકાની", "doctor_title": "લેક્ટેશન કન્સલ્ટન્ટ",
-            "about_p1": "મધર્સ ટચ ક્લિનિકમાં તમારું સ્વાગત છે. સ્તનપાન એ કુદરતી પ્રક્રિયા છે, પરંતુ તે હંમેશા સરળ હોતી નથી. લેક્ટેશન કન્સલ્ટન્ટ તરીકે મારો ઉદ્દેશ્ય માતાઓને આ સુંદર યાત્રા દરમિયાન જરૂરી જ્ઞાન, આત્મવિશ્વાસ અને સપોર્ટ આપવાનો છે.",
+            "about_p1": "મધર્સ ટચ ક્લિનિકમાં તમારું સ્વાગત છે. સ્તનપાન એ કુદરતી પ્રક્રિયા છે, પરંતુ તે હંમેશા સરળ હોતી નથી. લેક્ટેશન કન્સલ્ટન્ટ તરીકે મારો ઉદ્દેશ્ય માતાઓને આ સુંદર યાત્રા દરમિયાન જરૂરી જ્ઞાન, આત્મવિશકો, આત્મવિશ્વાસ અને સપોર્ટ આપવાનો છે.",
             "about_p2": "દરેક માતા અને બાળકની જરૂરિયાત અલગ હોય છે. તમને લેચિંગ, દૂધની ઓછી આવક, પમ્પિંગ અથવા કામ પર પાછા ફરતી વખતે કોઈ મુશ્કેલી પડતી હોય, તો અમે યોગ્ય ઉકેલ આપીએ છીએ.",
             "abt_hl_1": "કરુણાપૂર્ણ આધાર", "abt_hl_2": "વ્યક્તિગત સંભાળ", "abt_hl_3": "વૈજ્ઞાનિક માર્ગદર્શન", "abt_hl_4": "ઘરબેઠા સુવિધા", "about_btn": "પરામર્શ લો",
             "services_tag": "અમારી સેવાઓ", "services_title_1": "અમે કેવી રીતે", "services_title_span": "મદદ કરી શકીએ", "services_desc": "દરેક માતા અને બાળકની અનન્ય જરૂરિયાતો માટે સંપૂર્ણ સ્તનપાન સપોર્ટ.",
@@ -369,7 +383,7 @@
               });
           }
 
-          const revealElements = document.querySelectorAll('.service-card, .why-card, .appointment-info, .appointment-form-wrapper');
+          const revealElements = document.querySelectorAll('.hero-image, .about-image, .service-card, .why-card, .appointment-info, .appointment-form-wrapper');
           revealElements.forEach(el => el.classList.add('reveal'));
           const observer = new IntersectionObserver((entries) => {
               entries.forEach(entry => {
